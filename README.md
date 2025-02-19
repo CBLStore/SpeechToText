@@ -25,7 +25,7 @@ To use this Lightning Web Component in your Salesforce environment, follow these
 
 The Speech-to-Text Lightning Web Component is ideal for scenarios where users need to efficiently convert spoken words into text for documentation, record updates, or note-taking. This component significantly improves productivity for both desktop and mobile users within Salesforce.
 
-![shared image](https://github.com/user-attachments/assets/3f2103b6-c0ee-4a68-b20c-41307835f1bc)
+<img src="https://github.com/user-attachments/assets/3f2103b6-c0ee-4a68-b20c-41307835f1bc" height="700" width="500">
 
 - **Field Selection:** Select the desired field from the dropdown list.
 - **Language Selection:** Choose the language for speech recognition from the available options.
