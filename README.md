@@ -1,18 +1,35 @@
-# Salesforce DX Project: Next Steps
+# Speech-to-Text Lightning Web Component
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Overview
 
-## How Do You Plan to Deploy Your Changes?
+The **Speech-to-Text Lightning Web Component** is a Salesforce application designed to enable users to convert spoken words into text, simplifying data entry tasks. The component provides seamless integration with Salesforce records, allowing users to select fields, dictate text, and save it directly into the Salesforce. It is optimized to work across both desktop browsers and the Salesforce mobile app, ensuring a consistent experience on any device.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Key Features
 
-## Configure Your Salesforce DX Project
+- **Real-Time Speech Recognition:** Converts spoken words into text in real-time using browser-based speech recognition APIs.
+- **Multi-Language Support:** Supports multiple languages, including English, Spanish, French, German, and Hindi.
+- **Field Selection:** Allows users to select specific fields of a Salesforce record for data entry.
+- **Dynamic Status Updates:** Displays the current status (Recording or Not Recording) with clear indicators.
+- **Error Handling:** Provides toast notifications for errors such as unsupported browsers or recognition failures.
+- **Integration with Salesforce Records:** Updates selected fields in Salesforce records with recognized text.
+- **Mobile Compatibility:** Fully functional on the Salesforce mobile app for Field Service Lightning and other use cases.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## Installation
 
-## Read All About It
+To use this Lightning Web Component in your Salesforce environment, follow these steps:
+- Clone or download the repository to your local machine.
+- Deploy the component to your Salesforce org using Salesforce CLI or other deployment tools.
+- Add the component to a Lightning page, app, or the Salesforce mobile app.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## Usage Scenario
+
+The Speech-to-Text Lightning Web Component is ideal for scenarios where users need to efficiently convert spoken words into text for documentation, record updates, or note-taking. This component significantly improves productivity for both desktop and mobile users within Salesforce.
+
+![shared image](https://github.com/user-attachments/assets/3f2103b6-c0ee-4a68-b20c-41307835f1bc)
+
+- **Field Selection:** Select the desired field from the dropdown list.
+- **Language Selection:** Choose the language for speech recognition from the available options.
+- **Start Recording:** Click the "Start" button to begin speech recognition.
+- **Stop Recording:** Click the "Stop" button to end the session. The recognized text will appear in the text area.
+- **Save Data:** Once satisfied, click "Save" to update the selected field of the record.
+- **Clear Text:** Use the "Clear" button to reset the text area and start over.
